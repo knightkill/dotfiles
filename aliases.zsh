@@ -51,3 +51,40 @@ alias resolve="git add . && git commit --no-edit"
 alias stash="git stash -u"
 alias unstage="git restore --staged ."
 alias wip="commit wip"
+
+
+# Alias
+alias vim='nvim'
+alias brewr='arm brew'
+alias c='composer'
+alias cgu='c global update'
+alias bs='brew search'
+alias bi='brew install'
+alias bc='brew install --cask'
+alias pa='php artisan'
+alias sail='bash vendor/bin/sail'
+alias s='sail'
+alias sa='sail artisan'
+alias sc='sail composer'
+alias sn='sail npm'
+alias z='vim ~/.zshrc && source ~/.zshrc'
+alias phpunit="./vendor/bin/phpunit"
+alias wp_s="sh $DOTFILES/scripts/setupwp.sh"
+alias wp_r="sh $DOTFILES/scripts/removewp.sh"
+alias popdb="sh $DOTFILES/scripts/remove_dbs.sh"
+alias n="npm"
+alias v="valet"
+alias vu="valet unlink"
+alias phpcv="sh $DOTFILES/scripts/phpcv.sh"
+alias pint="./vendor/bin/pint"
+alias pest="./vendor/bin/pest"
+alias gcm="git commit -m"
+alias gst="git status"
+alias gbr="git branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate"
+alias gsave="git add -A && git commit -m 'chore: commit save point'"
+alias gundo="git reset HEAD~1"
+alias glog="git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30"
+alias nx="yarn nx"
+alias d="docker exec"
+alias dc="docker compose"
+alias cll="truncate -s 0 ./storage/logs/laravel.log"

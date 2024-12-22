@@ -56,6 +56,11 @@ cask 'zoom'
 cask 'joplin'
 cask 'ray'
 cask 'jetbrains-toolbox'
+cask 'keepassxc'
+cask 'rectangle'
+cask 'cursor'
+cask 'iterm2'
+cask 'dropbox'
 
 # Quicklook
 cask 'qlmarkdown'
@@ -70,6 +75,7 @@ cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 cask 'font-hack'
+cask 'font-hack-nerd-font'
 
 # Mac App Store
 mas 'Giphy Capture', id: 668208984
