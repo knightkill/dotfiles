@@ -908,6 +908,8 @@ defaults write org.m0k.transmission RandomPort -bool true
 # Bypass the annoyingly slow t.co URL shortener
 defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
 
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist BatteryShowPercentage -bool true
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################

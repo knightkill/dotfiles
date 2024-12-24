@@ -21,6 +21,9 @@ brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'stripe/stripe-cli/stripe'
 brew 'stripe/stripe-mock/stripe-mock'
 brew 'svn' # Needed to install fonts
+brew 'neovim'
+brew 'pyenv'
+brew 'aws-sam-cli'
 
 # Spatie Medialibrary
 brew 'jpegoptim'
@@ -61,6 +64,7 @@ cask 'rectangle'
 cask 'cursor'
 cask 'iterm2'
 cask 'dropbox'
+cask 'adobe-creative-cloud'
 
 # Quicklook
 cask 'qlmarkdown'
