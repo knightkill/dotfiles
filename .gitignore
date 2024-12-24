@@ -1,0 +1,7 @@
+.env
+.aicommits
+.anormaly_ascii
+.etc
+.aws/**
+.exports
+.shortcuts

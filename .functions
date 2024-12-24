@@ -1,0 +1,34 @@
+#  Commit everything
+function commit() {
+  commitMessage="$*"
+
+  git add .
+
+  if [ "$commitMessage" = "" ]; then
+     aicommits
+     return
+  fi
+    
+  eval "git commit -a -m '${commitMessage}'"
+}
+
+wip() {
+    git add .
+    git commit -m 'wip'
+    git push
+}
+
+# Add this function to clean build directories
+# cbd() {
+#     local script_path="$HOME/Demo/BuildDeleters/clean-build-dirs.sh"
+    
+#     # Create scripts directory if it doesn't exist
+#     mkdir -p "$HOME/Demo/BuildDeleters"
+    
+    
+#     "$script_path" "$@"
+# }
+
+findandkillPort() { port=$(lsof -n -i TCP:$1 | grep LISTEN | awk '{ print $2 }')  kill -9 $port } 
+
+alias killport=findandkillPort
