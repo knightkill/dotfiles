@@ -151,7 +151,13 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
-. ./.env
-. ./.functions
-. ./.shortcuts
-. ./.anormaly_ascii
+. $DOTFILES/.env
+. $DOTFILES/.functions
+. $DOTFILES/.shortcuts
+. $DOTFILES/.anormaly_ascii
+
+# Set up global gitignore if not already configured
+if [ -z "$(git config --global core.excludesfile)" ]; then
+    echo "Setting up global gitignore..."
+    git config --global core.excludesfile $DOTFILES/.gitignore_global
+fi

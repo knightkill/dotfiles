@@ -24,6 +24,7 @@ brew 'svn' # Needed to install fonts
 brew 'neovim'
 brew 'pyenv'
 brew 'aws-sam-cli'
+brew 'rust'
 
 # Spatie Medialibrary
 brew 'jpegoptim'
